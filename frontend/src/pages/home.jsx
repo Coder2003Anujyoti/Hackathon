@@ -110,7 +110,7 @@ const Home = () => {
     }
     {
       loading==false && <>
-      <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 overflow-auto">
+      <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 overflow-auto no-scrollbar">
       <nav className="fixed inset-x-0 top-0 z-50 bg-slate-700 text-white backdrop-blur-md ">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
       {/* Logo */}
