@@ -27,7 +27,7 @@ const Home = () => {
     const [user,setUser]=useState([])
      const show_data=async(token,p)=>{
        try{
-       let response=await fetch(`http://localhost:8000/amazon?item=${p}`,{
+       let response=await fetch(`https://hackathon-0j7x.onrender.com/amazon?item=${p}`,{
           method: 'GET',
          headers: { Authorization: `Bearer ${token}`},
        })

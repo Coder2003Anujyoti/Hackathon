@@ -56,21 +56,21 @@ maxWidth: "360px",},});
       // Do your login/signup/reset logic here
       let response;
       if(mode=="signup"){
-        response=await fetch("http://localhost:8000/signup",{
+        response=await fetch("https://hackathon-0j7x.onrender.com/signup",{
           method:'POST',
           headers:{ 'Content-Type' : "application/json" },
           body: JSON.stringify({username,password}),
         })
       }
       else if(mode=="login"){
-        response=await fetch("http://localhost:8000/login",{
+        response=await fetch("https://hackathon-0j7x.onrender.com/login",{
           method:'POST',
           headers:{ 'Content-Type' : "application/json" },
           body: JSON.stringify({username,password}),
         })
       }
       else{
-        response=await fetch("http://localhost:8000/forget",{
+        response=await fetch("https://hackathon-0j7x.onrender.com/forget",{
           method:'POST',
           headers:{ 'Content-Type' : "application/json" },
           body: JSON.stringify({username,password}),

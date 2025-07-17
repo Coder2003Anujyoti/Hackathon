@@ -24,7 +24,7 @@ const Admin = () => {
   const [user,setUser]=useState([])
   const show_data=async(token)=>{
     try{
-    let response=await fetch("http://localhost:8000/admin",{
+    let response=await fetch("https://hackathon-0j7x.onrender.com/admin",{
       headers: { Authorization: `Bearer ${token}`},
     })
     let data=await response.json()
